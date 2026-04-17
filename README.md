@@ -1,3 +1,3 @@
 # IT2A-rocnikovaprace
-17.04.2026 - vytvoření struktury souborů \n
+17.04.2026 - vytvoření struktury souborů<br>
            - scénář hry
