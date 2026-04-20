@@ -1,10 +1,11 @@
 # IT2A-rocnikovaprace
-17.04.2026 <br>
-- vytvoření struktury souborů<br>
-- scénář hry<br>
-20.04.2026 <br>
-- vytvoření grafické části hry<br>
-- vytvoření readme souboru pro lepší pochopení hry<br>
+## 17.04.2026 <br>
+ - vytvoření struktury souborů<br>
+ - scénář hry<br>
+ 
+## 20.04.2026 <br>
+ - vytvoření grafické části hry<br>
+ - vytvoření readme souboru pro lepší pochopení hry<br>
 
 # 🕵️ Detektivní hra – „Zmizelý kufřík“
 
