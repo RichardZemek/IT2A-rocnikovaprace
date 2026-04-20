@@ -6,6 +6,7 @@
 ## 20.04.2026 <br>
  - vytvoření grafické části hry<br>
  - vytvoření readme souboru pro lepší pochopení hry<br>
+ - první polofunkční scéna<br>
 
 # 🕵️ Detektivní hra – „Zmizelý kufřík“
 
