@@ -1,0 +1,57 @@
+﻿<UserControl x:Class="DetektivniHra.Scenes.StreetView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <Grid>
+
+        <!-- Pozadí -->
+        <Image Source="pack://application:,,,/DetektivniHra;component/Assets/Backgrounds/street.png"
+               Stretch="Fill"/>
+
+        <!-- Popelnice -->
+        <Button Width="120"
+                Height="120"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Bottom"
+                Margin="100,0,0,50"
+                Click="Trash_Click"
+                Background="Transparent"
+                BorderThickness="0"
+                Opacity="0.01"
+                Cursor="Hand">
+
+            <Image Source="pack://application:,,,/DetektivniHra;component/Assets/Objects/box1.png"
+                   Stretch="Uniform"/>
+        </Button>
+
+        <!-- Klikací oblast dveří -->
+        <Button Width="196"
+                Height="428"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Bottom"
+                Margin="328,0,0,300"
+                Click="Door_Click"
+                Background="#01000000"
+                BorderThickness="0"
+                Opacity="0.01"
+                Cursor="Hand"/>
+
+        <!-- Dialog panel -->
+        <Border VerticalAlignment="Bottom"
+                Height="120"
+                Background="#66000000"
+                CornerRadius="15"
+                Margin="20"
+                IsHitTestVisible="False">
+
+            <TextBlock x:Name="DialogText"
+                       Foreground="White"
+                       FontSize="24"
+                       Margin="30,20"
+                       TextWrapping="Wrap"
+                       VerticalAlignment="Center"
+                       FontWeight="SemiBold"/>
+        </Border>
+
+    </Grid>
+</UserControl>

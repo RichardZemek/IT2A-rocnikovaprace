@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Assets\Backgrounds\apartment.png" />
+    <None Remove="Assets\Backgrounds\street.png" />
+    <None Remove="Assets\Backgrounds\warehouse.png" />
+    <None Remove="Assets\UI\dialog_box.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Assets\Sounds\" />
+    <Folder Include="Models\" />
+    <Folder Include="UI\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Assets\Backgrounds\apartment.png" />
+    <Resource Include="Assets\Backgrounds\street.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Backgrounds\warehouse.png" />
+    <Resource Include="Assets\UI\dialog_box.png" />
+  </ItemGroup>
+
+</Project>

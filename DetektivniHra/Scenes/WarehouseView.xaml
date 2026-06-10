@@ -1,0 +1,91 @@
+﻿<UserControl x:Class="DetektivniHra.Scenes.WarehouseView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <Grid>
+
+        <!-- Pozadí -->
+        <Image Source="/Assets/Backgrounds/warehouse.png"
+               Stretch="Fill"/>
+
+        <!-- Kufřík -->
+        <Button Width="333"
+                Height="135"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Bottom"
+                Margin="521,0,0,341"
+                Click="Suitcase_Click"
+                Background="Transparent"
+                BorderThickness="0"
+                Opacity="0.01"
+                Cursor="Hand"
+                RenderTransformOrigin="0.5,0.5">
+
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-14.072"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+
+            <Image Source="pack://application:,,,/DetektivniHra;component/Assets/Objects/suitcase.png"
+                   Stretch="Uniform"
+                   Height="160"
+                   Width="158"/>
+        </Button>
+
+        <!-- Krabice vlevo -->
+        <Button Width="230"
+                Height="189"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Bottom"
+                Margin="33,0,0,436"
+                Click="Box1_Click"
+                Background="Transparent"
+                Cursor="Hand"
+                BorderThickness="0"
+                Opacity="0.01">
+
+            <Image Source="pack://application:,,,/DetektivniHra;component/Assets/Objects/box1.png"
+                   Stretch="Uniform"
+                   Height="114"
+                   Width="236"/>
+        </Button>
+
+        <!-- Krabice vpravo -->
+        <Button Width="150"
+                Height="150"
+                HorizontalAlignment="Right"
+                VerticalAlignment="Bottom"
+                Margin="0,0,120,100"
+                Click="Box2_Click"
+                Background="Transparent"
+                Cursor="Hand"
+                BorderThickness="0"
+                Opacity="0.01">
+
+            <Image Source="pack://application:,,,/DetektivniHra;component/Assets/Objects/box2.png"
+                   Stretch="Uniform"/>
+        </Button>
+
+        <!-- Dialog panel -->
+        <Border VerticalAlignment="Bottom"
+                Height="120"
+                Background="#77000000"
+                CornerRadius="15"
+                Margin="20"
+                IsHitTestVisible="False">
+
+            <TextBlock x:Name="DialogText"
+                       Foreground="White"
+                       FontSize="24"
+                       Margin="30,20"
+                       TextWrapping="Wrap"
+                       VerticalAlignment="Center"
+                       FontWeight="SemiBold"/>
+        </Border>
+
+    </Grid>
+</UserControl>
